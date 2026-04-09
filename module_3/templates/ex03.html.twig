@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h2>uppercaseWords filter</h2>
+    <p>{{ 'ex03.string1'|trans|uppercaseWords }}</p>
+    <p>{{ 'ex03.string2'|trans|uppercaseWords }}</p>
+
+    <h2>countNumbers function</h2>
+    <p>{{ countNumbers('ex03.string1'|trans) }}</p>
+    <p>{{ countNumbers('ex03.string2'|trans) }}</p>
+{% endblock %}

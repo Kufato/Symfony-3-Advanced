@@ -1,3 +1,6 @@
 ex02:
     number: 'The config number is %number%'
     count: '{0} none|{1} one|]1,9] number %count%'
+ex03:
+    string1: 'hello world 123'
+    string2: 'symfony is awesome 67'
