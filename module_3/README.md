@@ -40,5 +40,28 @@ Retourne "Le numéro de configuration est 43"
 
 ------------------------------------------------------------------
 
+# Flux pour l'exercice 03
+Ex03Controller
+      ↓
+render('ex03.html.twig')
+      ↓
+'ex03.string1'|trans → messages.en.yaml
+      ↓
+|uppercaseWords → Ex03Extension → Ex03Service::uppercaseWords()
+countNumbers() → Ex03Extension → Ex03Service::countNumbers()
+
+------------------------------------------------------------------
+
+# Flux pour l'exercice 04
+php bin/phpunit
+      ↓
+Détecte tests/Service/Ex03ServiceTest.php
+      ↓
+setUp() → instancie Ex03Service
+      ↓
+Execute chaque méthode test*()
+      ↓
+assertEquals(attendu, obtenu)
+
 # Commande pour lancer les tests de l'exercice 04
 php bin/phpunit
